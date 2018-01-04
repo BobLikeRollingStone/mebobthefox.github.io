@@ -1,0 +1,154 @@
+body{
+  background-color: #b5a789;
+  margin: 0;
+  font-size: small;
+  font-weight: normal;
+  font-family:sans-serif;
+}
+@font-face {
+     font-family: "Emblema One";
+     src: url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.woff"),
+     src: url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.ttf");
+}
+header{
+  background-color:#7EC0EE;
+  padding: 3px;
+}
+section#poem{
+  display: table-cell;
+  background-color:#FAFAFA;
+  font-family:Parisienne,fantasy;
+  vertical-align: top;
+  text-align: center;
+  font-size: 160%;
+  padding: 5px;
+  margin: 10px;
+}
+section#blog,#form{
+  display: table-cell;
+  vertical-align: top;
+  background-color: #efe5d0;
+  font-size: 110%;
+  padding: 15px;
+}
+section#main,#story,#canvasDraw{
+  display: table-cell;
+  vertical-align: top;
+  background-color: #efe5d0;
+  font-size: 110%;
+  padding: 15px;
+}
+aside#sidebar{
+  display: table-cell;
+  vertical-align: top;
+  background-color: #efe5d0;
+  font-size: 105%;
+  font-style: italic;
+  padding: 15px;
+  margin: 0 10px 0px 10px;
+}
+footer{
+  background-color:#7EC0EE;
+  text-align: center;
+  padding: 15px;
+  margin:0px 10px 10px 10px;
+  font-size: 80%;
+
+}
+.mission{
+  font-size: 130%;
+  text-align: center;
+  padding: 5px;
+}
+
+h1{
+  text-align: center;
+    font-size: 260%;
+    color: #0D0D0D;
+    font-family: Qwigley;
+}
+h2{
+  text-align: center;
+  font-size: 200%;
+  font-family: Bilbo Swash Caps;
+}
+h3{
+  text-align: center;
+  font-size: 120%;
+  font-family: Bilbo Swash Caps;
+}
+.slogan{color: #954b4b;}
+.beanheading{
+  text-align: center;
+  line-height: 1.8em;
+}
+time{
+  color: Navy;
+}
+a:link{
+color:Green;
+text-decoration: none;
+border-bottom: thin dotted #b76666;
+}
+a:visited{
+color:Navy;
+text-decoration: none;
+border-bottom: thin dotted #675c47;
+}
+a:hover{
+  color:Red;
+  text-decoration: none;
+  border-bottom: thin dotted #675c47;
+}
+nav{
+  background-color: #efe5d0;
+  margin:10px 10px 0px 10px;
+  padding: 0;
+}
+nav ul{
+  background-color: #efe5d0;
+  margin: 10px 10px 0px 10px;
+  list-style-type: none;
+  padding: 5px 0px 5px 0px;
+}
+nav ul li{
+  display:inline;
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+}
+nav ul li.selected{
+  background-color: #c8b99c;
+}
+div#tableContainer{
+  display: table;
+  border-spacing: 10px;
+}
+div#tableRow{
+display: table-row;
+}
+#quote{
+  border: 1px solid black;
+  background-color:GreenYellow ;
+  padding: 20px;
+  margin:26px;
+  padding-left: 80px;
+  margin-right: 15%;
+  border-radius: 16px;
+}
+canvas{
+  border: 1px solid black;
+}
+img{
+  border-radius: 3px;
+  transform: 0.7s;
+  -webkit-transition:0.7s;
+  -moz-transition:0.7s;
+  -o-transition:0.7s;
+}
+img:hover{
+  transform: rotate(-6deg);
+  -webkit-transition:rotate(-6deg);
+  -moz-transition:rotate(-6deg);
+  -o-transition:rotate(-6deg);
+  -ms-transition:rotate(-6deg);
+}
