@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>TweetShirt</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/tshirt.js"> </script>
+
+</head>
+
+<body>
+  <header>
+    <div class="mission">
+        <h1>Draw Something</h1>
+        <h2>Draw a line</h2>
+        <p>Sometimes,life is just a white paper</p>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li ><a href="index.html">HOME</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+      <li class="selected"><a href="tshirt.html">TSHIRT</a></li>
+      <li><a href="lounge.html">LOUNGE</a></li>
+      <li><a href="form.html">FORM</a></li>
+      <li><a href="study.html">STUDY</a></li>
+    </ul>
+  </nav>
+
+  <!-- Table Design -->
+  <div id="tableContainer">
+    <div id="tableRow">
+      <section id="drinks">
+        <h2>Beverages</h2>
+        <p>HouseBlend,$1.49</p>
+        <p>Mocha Cafe Latte,$2.35</p>
+        <p>Cappucino,$1.89</p>
+        <p>Chai Tea,$1.85</p>
+
+        <h2>ELIXIRS</h2>
+        <p>We proudly serve elixirs brewed by our friends at FirstPage.</p>
+        <p>Hoo!Izze,$2.99</p>
+        <p>Watermelon Juice,$2.99</p>
+        <p>Lemon Breeze,$2.99</p>
+      </section>
+<div id="canvasDraw">
+  <canvas id="tshirtCanvas" width="600" height="200" >Hey you,yes YOU ,upgrade your browser!</canvas>
+  <form>
+    <p>
+      <label for="backgroundColor">Select background color:</label>
+      <select id="backgroundColor">
+        <option value="white" selected="selected">White</option>
+        <option value="black">Black</option>
+      </select>
+    </p>
+    <p>
+      <label for="shape" >Circles or Suqares?</label>
+      <select id="shape">
+        <option value="none" selected="selected">None</option>
+        <option value="circles">Circles</option>
+        <option value="squares">Squares</option>
+      </select>
+    </p>
+    <p>
+      <label for="foregroundColor">Select text color:</label>
+      <select id="foregroundColor">
+        <option value="black" selected="selected">Black</option>
+        <option value="white">White</option>
+      </select>
+    </p>
+    <p>
+      <label id="tweets">Pick a tweet:</label>
+      <select id="tweets"></select>
+    </p>
+    <p>
+      <input type="button" name="previewButton" value="Preview">
+    </p>
+  </div>
+    <aside id="sidebar">
+        <p class="beanheading">
+          <img src="media/sunflower.jpg">
+            <br>
+              Order Online
+              with the
+              <a href="">Sunflower of VanGogh</a>
+            <br>
+            <span class="slogan">
+            HOT  <br>
+            POWERFUL<br>
+            FULL OF VITALITY<br>
+            </span>
+          </p>
+          <p>Why wait ?You can order all our fine photo
+            right from the Internet with our new ,
+            atuomated<a href="">Van Gogh</a><p>
+      </aside>
+
+  </div>
+</div>
+
+  </form>
+</body>
+</html>
