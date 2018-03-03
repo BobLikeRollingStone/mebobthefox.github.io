@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>MyLife</title>
+  <link rel="stylesheet" href="main.css">
+  <link href='http://fonts.font.im/css?family=Parisienne|Qwigley|Bilbo+Swash+Caps' rel='stylesheet' type='text/css'>
+  <script src="js/modernizr-custom.js"></script>
+  <script>
+  window.addEventListener("load",eventWindowLoaded,false);
+
+  var Debugger =function(){};
+  Debugger.log =function(message){
+      try{
+        console.log(message);
+      }catch(exception){
+        return;
+      }
+  }
+
+  function eventWindowLoaded(){
+    canvasApp();
+  }
+  function canvasApp(){
+    if(!canvasSupport()){
+      return;
+    }
+    var theCanvas=document.getElementById("CanvasOne");
+    var context=theCanvas.getContext("2d");
+
+    Debugger.log("开始绘图");
+    function drawScreen(){
+      //background
+      context.fillStyle="#ffffaa";
+      context.fillRect(0,0,500,300);
+      //text
+      context.fillStyle="#000000";
+      context.font="30px sans-serif";
+      context.textBaseline="top";
+      context.fillText("HelloWorld",195,80);
+      //Photo
+      var helloWorldImage =new Image();
+      helloWorldImage.onload=function(){
+        context.drawImage(helloWorldImage,155,110);
+      }
+      helloWorldImage.src="media/helloWorld.jpg";
+      //border
+      context.strokeStyle="#000000";
+      context.strokeRect(5,5,490,290);
+    }
+    drawScreen();
+
+  }
+
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="mission">
+        <h1>It's a game</h1>
+        <h2>Just start</h2>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li ><a href="index.html">首页</a></li>
+      <li><a href="blog.html">博客</a></li>
+      <li class="selected"><a href="canvas.html">Cavas实验区></a></li>
+      <!-- <li><a href="tshirt.html">画布</a></li>
+      <li><a href="lounge.html">沙龙</a></li>
+      <li><a href="form.html">表单</a></li> -->
+    </ul>
+  </nav>
+
+  <!-- Table Design -->
+  <div id="tableContainer">
+   <div id="tableRow">
+          <div >
+            <canvas id="CanvasOne" width="500" height="500">
+              你的浏览器不支持canvas,请升级到最新的版本。
+            </canvas>
+          </div>
+        </div>
+      </div>
+
+  <footer>
+    &copy;2017,MyBlog
+    <br>
+    <small> (c) 2018 Copyright Holder  LangLiu All Rights Reserved.</small>
+  </footer>
+
+</body>
+</html>
