@@ -12,6 +12,9 @@ Debugger.log =function(message){
 function eventWindowLoaded(){
   canvasApp();
 }
+function canvasSupport(){
+  return Modernizr.canvas;
+}
 function canvasApp(){
   if(!canvasSupport()){
     return;
